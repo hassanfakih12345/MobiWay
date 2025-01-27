@@ -4,61 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اتصل بنا</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #007BFF;
-        }
-        label {
-            font-size: 16px;
-            margin-bottom: 8px;
-            display: block;
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-        textarea {
-            height: 150px;
-        }
-        button {
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container">
-        <h1>اتصل بنا</h1>
+    <header>
+        <div class="logo">
+            <img src="https://imgur.com/SuiNMxD.png" alt="Store Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="all-products.html">All Products</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="perfumes.html">Perfumes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <select id="language-select">
+                        <option value="en">English</option>
+                        <option value="ar">العربية</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <section class="about">
+        <h2>اتصل بنا</h2>
         <form action="#" method="POST">
             <label for="name">الاسم الكامل:</label>
             <input type="text" id="name" name="name" required placeholder="أدخل اسمك">
@@ -71,7 +45,9 @@
 
             <button type="submit">إرسال</button>
         </form>
-    </div>
-
+    </section>
+    <footer>
+        <p>&copy; 2025 MobiWay. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
